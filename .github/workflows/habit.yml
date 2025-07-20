@@ -2,8 +2,8 @@ name: Run Notion Habit Reset
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Jeden Tag um 05:00 UTC (07:00 MESZ)
-  workflow_dispatch:
+    - cron: '*/15 * * * *'  # Alle 15 Minuten
+  workflow_dispatch:         # Optional: manuell startbar
 
 jobs:
   run-script:
